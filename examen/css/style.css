@@ -1,0 +1,443 @@
+/* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*/
+* {
+  box-sizing: border-box;
+  font-family: century gothic;
+}
+body {
+  font-weight: 500;
+  background-color: #b8b5b5c2;
+  position: relative;
+  padding-bottom: 1rem;
+  min-height: 100vh;
+  align-items: center;
+}
+
+header {  
+  background-color: #000000c2;
+  color: white;
+  padding: 0.05rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+nav {  
+  background-color: #000000c2;
+  color: white;
+  text-align: center;
+}
+
+label {
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+#btn-menu {
+  display: none;
+}
+
+nav label:hover {
+  cursor: pointer;
+  background: #000000cc;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li a {
+  display: inline-block;
+  color: #ccc8c8cc;
+  text-decoration: none;
+  padding: 15px 30px;
+}
+
+.menu li a:hover {
+  color: rgb(255, 255, 255);
+  transition: all 0.8s;
+  text-decoration: underline;
+}
+
+.menu li a.elegido {
+  color: white;
+}
+
+section .container {
+  padding: 10px;
+  margin-bottom: 10px;
+  float:right;
+  width: auto;
+}
+
+section article {
+  margin: 2rem;
+  padding: 0.1rem 0;
+  text-align: center;
+}
+
+
+
+
+/* efectos para el contenedor de pantalla completa */
+#contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+
+/* contenedor del login a la izquierda */
+#contenedorcentrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+    width: 50%;
+    background-color: #5f6769;
+    padding: 30px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+#login {
+    max-width: 320px;
+    min-width: 320px;
+    padding: 30px 30px 10px 30px;
+    background-color: #7a7c7c;    
+}
+
+#login label {
+    display: block;
+    font-size: 16px;
+    color:#000000;
+}
+
+#login input, select {
+    color:rgb(0, 0, 0);
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    border: none;
+}
+
+
+#login button {
+    font-size: 110%;
+    color:#000000;
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: #0228ff;
+    margin-top: 10px;
+}
+
+#login button:hover {
+    background-color: #111213;
+    color:#ffffff;
+}
+/* formulario de login */
+
+/* seccion de la derecha */
+/* por defecto */
+#derecho {
+    text-align: center;
+    width: 100%;
+    padding:20px 20px 20px 50px;
+}
+
+.titulo {
+    font-size: 300%;
+    color:#fcfcfc;
+}
+
+hr {
+  border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;  
+}
+
+.pie-form {
+    font-size: 90%;
+    text-align: center;    
+    margin-top: 15px;
+
+}
+
+.pie-form a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 3px;
+    background-color: #ff0000;
+}
+
+.pie-form a:hover {
+    color: #080808;
+}
+
+
+
+/* seccion de la derecha */
+/* seccion de la derecha */
+
+/* ajustar a pantallas con ancho menor o igual a 775px; */
+/* ajustar a pantallas con ancho menor o igual a 775px; */
+@media all and (max-width: 775px)
+{
+    #contenedorcentrado {
+        flex-direction:column-reverse;
+
+        min-width: 380px;
+        max-width: 900px;
+        width: 90%;
+
+        background-color: #5f6769;
+
+        /*opacity: 0.50;
+        filter: alpha(opacity=50);*/
+
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+
+        -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+        -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+        box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    
+    #login {
+        margin: 0 auto;
+    }
+    
+    #derecho {
+        padding:20px 20px 20px 20px;
+    }
+    
+    #login label {
+        text-align: left;
+    }
+}
+/* ajustar a pantallas con ancho menor o igual a 775px; */
+/* ajustar a pantallas con ancho menor o igual a 775px; */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-register {
+  width: 400px;
+  background-color: #000000c2;
+  padding: 30px;
+  margin: 2rem auto;
+}
+
+.form-register h4 {
+  font-size: 19px;
+  margin-bottom: 20px;
+  text-align: right;
+  color: rgb(233, 225, 225)	;
+}
+
+.controlador {
+  width: 100%;
+  background: #ffffff;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #7b7e85;
+  font-size: 14px;
+  /*color: white;*/
+}
+
+.form-register .boton {
+  width: 100%;
+  background: #1d1c72c4;
+  border: solid 1px;
+  border-radius: 0%;
+  padding:10px;
+  color: rgb(243, 234, 234);
+  margin: 16px 0;
+  font-size: 15px;
+}
+
+
+
+table {
+  border-collapse: collapse;
+  color: #000000;
+  font-size: 16px;
+  background-color: #a2b999;
+  width: 100%;
+}
+
+th,
+tr,
+td {
+  border: solid 1px #eee;
+  padding: 5px;
+  text-align: center;
+}
+
+th {
+  background-color: #364550;
+  color: white;
+  text-align: center;
+}
+
+div a {
+  background-color: #364560;
+  color: white;
+  padding: 1rem 1rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+div a:hover {
+  color: black;
+  background-color: slategray;
+}
+
+div b {
+  background-color: #364560;
+  color: white;
+  padding: 1rem 1rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+form input.boton {
+  background-color: #48e;
+  color: #fff;
+  width: calc(80% - 20px);
+  margin: 0 10%;
+  margin-top: 22px;
+  border-radius: 0.5rem;
+  transition: color 0.3s ease;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+form section input.boton:hover {
+  box-shadow: 0 0.1rem 0.4rem rgba(221, 221, 204, 0.863);
+}
+
+.ok {
+  text-align: center;
+  width: 100%;
+  padding: 12px;
+  background-color: #78b361;
+  color: #fff;
+}
+.bad {
+  text-align: center;
+  width: 100%;
+  padding: 12px;
+  background-color: rgba(180, 38, 38, 0.288);
+  color: #fff;
+}
+
+footer {
+  position: absolute;
+  background-color: #000000c2;
+  padding: 20px;
+  width: 100%;
+  bottom: 0;
+  color: white;
+  padding-bottom: 20px;
+}
+
+footer section {
+  float: right;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  transition: color 0.3s ease;
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: cornflowerblue;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 30px 20px;
+  }
+  header h1 {
+    font-size: 36px;
+    margin-bottom: 22px;
+  }
+
+  header label {
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    background: #1a1b1b;
+    width: 30%;
+    margin-left: -60%;
+    transition: all 0.5s;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu li {
+    border-top: 1px solid #fff;
+  }
+
+  #btn-menu:checked ~ .menu {
+    margin: 0;
+  }
+
+  header p {
+    font-size: 18px;
+  }
+  main {
+    width: 50vw;
+    padding: 10px;
+  }
+  article {
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+  article h3 {
+    margin: 10px 0 20px 0;
+  }
+  article p {
+    margin-top: 16px;
+    line-height: 20px;
+  }
+}
